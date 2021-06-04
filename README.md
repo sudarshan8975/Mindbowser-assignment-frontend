@@ -1,1 +1,1 @@
-# Mindbowser-assignment-backend
+# Mindbowser-assignment-frontend
