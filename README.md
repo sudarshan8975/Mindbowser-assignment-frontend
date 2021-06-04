@@ -6,5 +6,5 @@ Steps to run project
 4) Sign up with proper credentials.
 5) Login with registered username and password.
 6) Select a subscription plan. 
-7) Make Payment.
+7) Make Payment (Note: For Payment Gateway use RazorPay and it is in Test Mode.).
 8) After successfully subscription you can cancel or resume subscription.
