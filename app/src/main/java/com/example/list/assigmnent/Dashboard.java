@@ -3,6 +3,7 @@ package com.example.list.assigmnent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -53,7 +54,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 email=b.getString("email");
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.e("Exception","error messsage"+e.getMessage());
         }
         loadProgressBar= ProgressBarManager.getInstance(Dashboard.this);
         checkout = new Checkout();
@@ -81,6 +82,9 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             case R.id.resumeSubscriptin:
                 subscriptionCompleted();
                 break;
+            default:
+
+                break;
         }
     }
 
@@ -105,6 +109,13 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 Toast.makeText(getApplicationContext(),"Problem Fetch Subscription",Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent in=new Intent(Dashboard.this,Dashboard.class);
+        startActivity(in);
+        finish();
     }
 
     public void startSubscription (){

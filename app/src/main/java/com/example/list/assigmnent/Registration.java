@@ -8,7 +8,6 @@ import android.os.Bundle;
 import com.example.list.assigmnent.model.RegistrationRequest;
 import com.example.list.assigmnent.model.RegistrationResponse;
 import com.example.list.assigmnent.service.ApiManager;
-import com.example.list.assigmnent.service.Services;
 import com.example.list.assigmnent.utility.Utility;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,17 +28,23 @@ import java.util.Locale;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Registration extends AppCompatActivity implements View.OnClickListener {
     Calendar calender;
     Calendar dateandtime;
     Date date;
     SimpleDateFormat simpleDateFormat;
-    EditText et_email,et_firstName,et_lastName,et_pass,et_address,et_dob,et_companyName;
-    private int year, month, day;
-    ImageButton btn_dob;
+    EditText et_email;
+    EditText et_firstName;
+    EditText et_lastName;
+    EditText et_pass;
+    EditText et_address;
+    EditText et_dob;
+    EditText et_companyName;
+
+    private int year;
+    private int month;
+    private int day;
     Button regButton;
     String curDate;
     private String email;
@@ -63,8 +68,6 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
         et_pass=(EditText)findViewById(R.id.password);
         et_address=(EditText)findViewById(R.id.address);
         et_companyName=(EditText)findViewById(R.id.company);
-
-        //btn_dob=(ImageButton)findViewById(R.id.btn_dob);
         regButton=(Button)findViewById(R.id.regButton);
         regButton.setOnClickListener(this);
         et_dob.setOnClickListener(this);
@@ -89,6 +92,9 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
 
             case R.id.regButton:
                 registration();
+                break;
+            default:
+
                 break;
         }
     }
@@ -200,7 +206,7 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
         }
         return null;
     }
-    public DatePickerDialog.OnDateSetListener myDateListener = new
+    private DatePickerDialog.OnDateSetListener myDateListener = new
             DatePickerDialog.OnDateSetListener()
             {
                 @Override
@@ -246,7 +252,7 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.e("Exception","error messsage"+e.getMessage());
         }
     }
 }

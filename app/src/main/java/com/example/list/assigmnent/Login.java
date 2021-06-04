@@ -79,6 +79,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener, Ac
                 startActivity(in);
                 finish();
                 break;
+            default:
+
+                break;
         }
     }
 
@@ -98,7 +101,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener, Ac
                     Intent in=new Intent(Login.this,Dashboard.class);
                     b.putString("token", token);
                     b.putString("email",emailid);
-                    in.putExtras(b);
                     in.putExtras(b);
                     startActivity(in);
                     finish();
@@ -231,8 +233,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener, Ac
                 }
                 return;
             }
-            // other 'case' lines to check for other
-            // permissions this app might request
+
         }
     }
 
