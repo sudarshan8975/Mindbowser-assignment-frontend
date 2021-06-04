@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Mindbowser Assignment</string>
+    <string name="lbl_userid">Enter Email Id</string>
+    <string name="lbl_pass">Enter Passward</string>
+    <string name="login_password_hint">Password</string>
+    <string name="lbl_registration">Signup</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="lbl_first_name">First Name</string>
+    <string name="lbl_last_name">Last Name</string>
+    <string name="lbl_addr">Address</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_dob">Birthdate</string>
+    <string name="lbl_cmp_nm">Company Name</string>
+
+    <string name="alrt_password">Please Enter Password</string>
+    <string name="alrt_first_name">Please Enter First Name</string>
+    <string name="alrt_last_name">Please Enter Last Name</string>
+    <string name="alrt_addr">Please Enter Address</string>
+    <string name="alrt_email">Please Enter Email</string>
+    <string name="alrt_validEmail">Please Enter Valid Email</string>
+    <string name="alrt_dob">Please Enter Birthdate</string>
+    <string name="alrt_cmp_nm">Please Enter Company Name</string>
+
+    <string name="alrt_alredyEmail">This Email Id Already Exist, Please Enter Another Email Id.</string>
+    <string name="alrt_problemRegistration">Problem To Registration.</string>
+    <string name="alrt_successRegistration">Registration Successfully.</string>
+    <string name="lbl_subscription">Get Monthly Subscription At Rs. 2</string>
+    <string name="lbl_cancleSubscription">Cancel Subscription</string>
+    <string name="lbl_resumeSubscription">Resume Subscription</string>
+
+    <string name="alrt_subscription">Please Subscribe First</string>
+    <string name="alrt_alredySubscription">You Have Alredy Subscribed</string>
+    <string name="lbl_notSubscribed">Not Subscribed</string>
+    <string name="lbl_cancleSubscribed">Cancelled</string>
+    <string name="lbl_subscribed">Subscribed</string>
+    <string name="lbl_subscribStatus">Subscription Status:</string>
+</resources>
